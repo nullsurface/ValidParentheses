@@ -59,10 +59,7 @@ int isValid(char* s) {
 }
 
 int isopen(char c) {
-    if (c == '(' || c == '[' || c == '{')
-	return 1;
-
-    return 0;
+    return c == '(' || c == '[' || c == '{';
 }
 
 int correct_close(char* open, int opened, char curr) {
